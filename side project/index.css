@@ -1,0 +1,17 @@
+@font-face {
+  src: url(OpenSans-Regular.ttf);
+  font-family: "Open Sans";
+}
+@font-face {
+  src: url(Roboto-VariableFont_wdth,wgh.ttf);
+  font-family: "Roboto variable";
+}
+h1 {
+  font-family: "Roboto variable", verdana, sans-serif;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+} 
+
