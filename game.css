@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  color: white;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+header h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 20px;
+  color: #aaa;
+}
+
+
+/* GAME CONTAINER */
+
+.games-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+
+/* GAME CARD */
+
+.game-card {
+  width: 320px;
+  background: #181818;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+
+/* IMAGE */
+
+.game-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.game-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.game-content h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.game-content p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+/* BUTTON */
+
+.game-content button {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform 0.2s,
+              opacity 0.2s;
+}
+
+.game-content button:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+
+/* ===================== */
+/* GOD OF WAR */
+/* ===================== */
+
+.god-of-war {
+  border-top: 6px solid #b30000;
+}
+
+.god-of-war .game-content {
+  background: linear-gradient(
+    to bottom,
+    #260000,
+    #111
+  );
+}
+
+.god-of-war h2 {
+  color: #ff3333;
+}
+
+.god-of-war button {
+  background: #b30000;
+}
+
+
+/* ===================== */
+/* FIFA */
+/* ===================== */
+
+.fifa {
+  border-top: 6px solid #00a651;
+}
+
+.fifa .game-content {
+  background: linear-gradient(
+    to bottom,
+    #003d1c,
+    #111
+  );
+}
+
+.fifa h2 {
+  color: #00d66b;
+}
+
+.fifa button {
+  background: #00a651;
+}
+
+
+/* ===================== */
+/* NBA / BULLS THEME */
+/* ===================== */
+
+.nba {
+  border-top: 6px solid #d40000;
+}
+
+.nba .game-content {
+  background: linear-gradient(
+    to bottom,
+    #300000,
+    #111
+  );
+}
+
+.nba h2 {
+  color: #ff3333;
+}
+
+.nba button {
+  background: #d40000;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  color: #777;
+}

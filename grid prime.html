@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+</head>
+<body>
+
+  <!-- 2 equal columns -->
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    height: 140px;
+  ">
+    <div style="background-color: lightblue;">div 1</div>
+    <div style="background-color: lightpink;">
+      div 2
+      <br><br>
+      text
+    </div>
+  </div>
+
+  <!-- Fixed pixel columns -->
+  <div style="
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    width: 800px;
+    height: 140px;
+  ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">
+      100px
+      <br><br>
+      text
+    </div>
+    <div style="background-color: lightblue;">200px</div>
+    <div style="background-color: lightpink;">100px</div>
+  </div>
+
+  <!-- 100px + remaining space -->
+  <div style="
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">1fr</div>
+  </div>
+
+  <!-- 100px + 1 fraction + 2 fractions -->
+  <div style="
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+  ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">1fr</div>
+    <div style="background-color: lightblue;">2fr</div>
+  </div>
+
+  <!-- 3 equal columns -->
+  <div style="
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+  ">
+    <div style="background-color: lightblue;">1fr</div>
+    <div style="background-color: lightpink;">1fr</div>
+    <div style="background-color: lightblue;">1fr</div>
+  </div>
+
+</body>
+</html>
