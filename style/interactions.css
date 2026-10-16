@@ -1,0 +1,45 @@
+body { font-family: Arial, sans-serif; padding-top: var(--header-height, 132px); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font-family: inherit; }
+button, .action-link { transition: background-color .2s, box-shadow .2s; }
+button:hover { box-shadow: 0 0 0 3px #0070cc44; }
+a:focus-visible, button:focus-visible { outline: 3px solid #0070cc; outline-offset: 4px; }
+.header.is-scrolled { box-shadow: 0 4px 18px #0002; }
+.main-nav-left { box-sizing: border-box; min-height: 64px; }
+.nav-links a:hover, .ps5-links a:hover, a[aria-expanded="true"] { color: #0070cc; }
+.ps5-navigation { align-items: center; gap: 18px; }
+.buy-button { flex-shrink: 0; }
+.hero-content { max-width: 540px; text-shadow: 0 2px 14px #0009; }
+.hero h1 { font-size: clamp(36px, 5vw, 64px); margin-bottom: 12px; }
+.hero h2 { font-size: clamp(24px, 3vw, 36px); }
+.play-button { border: 1px solid white; margin: 12px 0 0 8px; background: #0004; }
+.navigation-panel { position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 28px max(24px, 6vw); box-shadow: 0 15px 24px #0003; display: flex; justify-content: space-between; gap: 20px; }
+.navigation-panel[hidden] { display: none; }
+.navigation-panel h2 { margin-top: 0; }
+.navigation-panel button, .dialog-close { background: transparent; border: 0; font-size: 30px; cursor: pointer; align-self: flex-start; }
+.action-link { display: inline-block; padding: 12px 20px; border-radius: 24px; background: #0070cc; color: white; text-decoration: none; text-shadow: none; }
+.action-link:hover { background: #004f91; }
+.ps-dialog { box-sizing: border-box; border: 0; border-radius: 18px; padding: 36px; width: min(600px, calc(100% - 32px)); max-height: 85vh; color: #202124; box-shadow: 0 20px 80px #0005; }
+.ps-dialog::backdrop { background: #071426bb; backdrop-filter: blur(5px); }
+.dialog-close { position: absolute; top: 10px; right: 14px; }
+.ps-dialog p { line-height: 1.6; color: #555; }
+.console-options { display: grid; gap: 14px; margin-top: 24px; }
+.console-options a { display: grid; gap: 10px; padding: 22px; border: 1px solid #ddd; border-radius: 12px; color: #0070cc; text-decoration: none; }
+.console-options a:hover { background: #edf5ff; border-color: #0070cc; }
+.console-options strong { font-size: 22px; }
+.dialog-open { overflow: hidden; }
+@media (max-width: 900px) {
+    .main-nav-left { padding: 12px; flex-wrap: wrap; }
+    .nav-links { padding: 12px 0 0; flex-wrap: wrap; gap: 14px; }
+    .nav-links a { margin: 0; font-size: 15px; }
+    .ps5-navigation { padding: 12px; flex-wrap: wrap; }
+    .ps5-links { order: 3; width: 100%; overflow-x: auto; padding: 8px 0; }
+    .ps5-link { white-space: nowrap; }
+    .hero { height: 620px; }
+    .hero-content { left: 24px; right: 24px; }
+    .hero-img { filter: brightness(.65); }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .hero.is-ready .hero-content { animation: hero-enter .7s ease-out; }
+    @keyframes hero-enter { from { opacity: 0; translate: 0 20px; } to { opacity: 1; translate: 0 0; } }
+}
